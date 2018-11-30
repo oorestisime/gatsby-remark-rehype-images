@@ -19,7 +19,7 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: require.resolve(`..`),
+            resolve: `gatsby-remark-rehype-images`,
             options: {
               tag: 'rehype-image',
               maxWidth: 1080
