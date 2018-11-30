@@ -1,0 +1,53 @@
+{
+  "name": "gatsby-remark-rehype-images",
+  "description": "Gatsby remark plugin for augmenting images with plugin-sharp and turning them into react components",
+  "version": "0.0.1",
+  "author": "Orestis Ioannou <oorestisime@gmail.com>",
+  "main": "index.js",
+  "bugs": {
+    "url": "https://github.com/oorestisime/gatsby-remark-rehype-images/issues"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.0.0",
+    "@babel/runtime": "^7.0.0",
+    "cheerio": "^1.0.0-rc.2",
+    "gatsby": "^2.0.59",
+    "gatsby-plugin-sharp": "^2.0.14",
+    "is-relative-url": "^2.0.0",
+    "lodash": "^4.17.10",
+    "slash": "^1.0.0",
+    "unist-util-select": "^1.5.0",
+    "unist-util-visit-parents": "^2.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "babel-eslint": "^8.2.3",
+    "cross-env": "^5.1.4",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.11.1"
+  },
+  "homepage": "https://github.com/oorestisime/gatsby-remark-rehype-images",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "image",
+    "markdown",
+    "remark",
+    "rehype",
+    "responsive images"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "gatsby": ">2.0.0"
+  },
+  "repository": "https://github.com/oorestisime/gatsby-remark-rehype-images",
+  "scripts": {
+    "build": "babel src --out-dir . --ignore **/__tests__",
+    "prepare": "cross-env NODE_ENV=production npm run build",
+    "watch": "babel -w src --out-dir . --ignore **/__tests__"
+  }
+}
