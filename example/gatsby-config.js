@@ -19,8 +19,8 @@ module.exports = {
       options: {
         plugins: [
           {
-            // resolve: `gatsby-remark-rehype-images`,
-            resolve: require.resolve('..'),
+            resolve: 'gatsby-remark-rehype-images',
+            // resolve: require.resolve('..'),
             options: {
               tag: 'rehype-image',
               sharpFunction: 'fixed',

@@ -1,7 +1,7 @@
 {
   "name": "gatsby-remark-rehype-images",
   "description": "Gatsby remark plugin for augmenting images with plugin-sharp and turning them into react components",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "Orestis Ioannou <oorestisime@gmail.com>",
   "main": "index.js",
   "bugs": {
