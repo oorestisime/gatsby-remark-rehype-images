@@ -72,29 +72,23 @@ Here's the result:
 
 ## Notes
 
-For the moment it accepts the following parameters as options:
+In order to better understand the different options available during the image processing, be sure to read [this](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-sharp#readme).
 
+The package accepts as a parameter the tag, type of sharp function and you can then
+specify any arguments you wish to pass on to plugin sharp.
 
 ```
 const defaults = {
   tag: 'rehype-img',
-  maxWidth: 650,
-  wrapperStyle: ``,
-  linkImagesToOriginal: true,
-  showCaptions: false,
-  withWebp: false,
+  sharpFunction: 'fluid',
+  maxWidth: 800,
+  quality: 90,
 }
 ```
 
-which are actually the ones accepted by `remark-images` plus the desired tag!
-
-Coming soon a better configuration here, meaning being able to specify whether you
-want `fixed` or `fluid` images and the corresponding parameters
-
 ## Looking forward to see what you build
 
-This should open a new door for creating all new exciting components for your markdown files.
-Here's an example:
+This should open a new door for creating all new exciting components for your markdown files. Here's an example:
 
 ```
 <grid>
@@ -104,5 +98,5 @@ Here's an example:
 </grid>
 ```
 
-You could create a grid component that renders the children in a row.
+You could create a [grid component](/examples) that renders the children in a row.
 And you can easily imagine `s/grid/gallery` or anything that comes up your mind!

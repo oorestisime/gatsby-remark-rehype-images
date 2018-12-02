@@ -1,33 +1,36 @@
 module.exports = {
   siteMetadata: {
-    title: `gatsby-example-using-remark-rehype-images`,
-    author: `@oorestisime`,
-    description: `Join the Remark rehype wagon`,
-    homepage: `https://www.gatsbyjs.org`,
+    title: 'gatsby-example-using-remark-rehype-images',
+    author: '@oorestisime',
+    description: 'Join the Remark rehype wagon',
+    homepage: 'https://www.gatsbyjs.org',
   },
   plugins: [
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/pages`,
-        name: `pages`,
+        name: 'pages',
       },
     },
-    `gatsby-transformer-sharp`,
+    'gatsby-transformer-sharp',
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-rehype-images`,
+            // resolve: `gatsby-remark-rehype-images`,
+            resolve: require.resolve('..'),
             options: {
               tag: 'rehype-image',
-              maxWidth: 1080
-            }
+              sharpFunction: 'fixed',
+              width: 300,
+              height: 200,
+            },
           },
         ],
       },
     },
-    `gatsby-plugin-sharp`,
+    'gatsby-plugin-sharp',
   ],
-}
+};

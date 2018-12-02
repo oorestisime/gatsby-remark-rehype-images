@@ -25,7 +25,9 @@ const IndexPage = () => (
       <Paragraph size="large" textAlign="left">
         Parses html style tags in markdown files with an src attribute pointing to a
         local image, uses plugin-sharp on the image and inserts the result in
-        rehyped attribute.<br/><br/>
+        rehyped attribute.
+        <br />
+        <br />
         You can then load it in your React Component and call
         gatsby-image to get all of the goodies (blur effect etc) or even apply
         custom styles and create galleries etc!
@@ -57,7 +59,8 @@ const IndexPage = () => (
       justify="center"
       margin={{ vertical: 'xsmall' }}
     >
-      <Button primary label="Check configuration and example" onClick={() => push(`/custom-component/`)}/>
+      <Button primary label="Details and configuration configuration" onClick={() => push('/custom-component/')} />
+      <Button primary label="Grid example" onClick={() => push('/examples/')} />
     </Box>
   </Grommet>
 );

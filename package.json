@@ -10,6 +10,7 @@
   "dependencies": {
     "@babel/preset-env": "^7.0.0",
     "@babel/runtime": "^7.0.0",
+    "bluebird": "^3.5.3",
     "cheerio": "^1.0.0-rc.2",
     "gatsby": "^2.0.59",
     "gatsby-plugin-sharp": "^2.0.14",
