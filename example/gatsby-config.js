@@ -6,6 +6,7 @@ module.exports = {
     homepage: 'https://www.gatsbyjs.org',
   },
   plugins: [
+    'gatsby-plugin-styled-components',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -23,9 +24,8 @@ module.exports = {
             // resolve: require.resolve('..'),
             options: {
               tag: 'rehype-image',
-              sharpFunction: 'fixed',
-              width: 300,
-              height: 200,
+              sharpFunction: 'fluid',
+              maxWidth: 600,
             },
           },
         ],

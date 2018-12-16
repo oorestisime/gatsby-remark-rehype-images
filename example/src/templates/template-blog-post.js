@@ -9,14 +9,14 @@ import { grommet } from 'grommet/themes';
 
 import FullWidth from '../components/FullWidth';
 import Photo from '../components/Photo';
-import Grid from '../components/Grid';
+import GridComponent from '../components/Grid';
 
 // eslint-disable-next-line new-cap
 const renderAst = new rehypeReact({
   createElement: React.createElement,
   components: {
     'rehype-image': Photo,
-    grid: Grid,
+    grid: GridComponent,
   },
 }).Compiler;
 

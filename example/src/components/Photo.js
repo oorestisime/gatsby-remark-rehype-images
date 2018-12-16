@@ -1,9 +1,18 @@
-import React from "react"
-import Img from "gatsby-image"
+import React from 'react';
+import Img from 'gatsby-image';
 
-export default class Photo extends React.Component {
-  render() {
-    const { rehyped } = this.props;
-    return <Img fluid={JSON.parse(rehyped)} />;
-  }
-}
+const Photo = ({ rehyped }) => {
+  const props = JSON.parse(rehyped);
+
+  return (
+    <Img
+      fluid={props}
+      style={{
+        maxWidth: props.presentationWidth,
+        margin: '0 auto',
+      }}
+    />
+  );
+};
+
+export default Photo;

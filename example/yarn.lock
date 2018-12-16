@@ -2233,7 +2233,7 @@ blob@0.0.5:
   resolved "https://registry.yarnpkg.com/blob/-/blob-0.0.5.tgz#d680eeef25f8cd91ad533f5b01eed48e64caf683"
   integrity sha512-gaqbzQPqOoamawKg0LGVd7SzLgXS+JH61oWprSLH+P+abTczqJbhTR8CmJ2u9/bUYNmHTGJx/UEmn6doAvvuig==
 
-bluebird@^3.5.0, bluebird@^3.5.1:
+bluebird@^3.5.0, bluebird@^3.5.1, bluebird@^3.5.3:
   version "3.5.3"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.3.tgz#7d01c6f9616c9a51ab0f8c549a79dfe6ec33efa7"
   integrity sha512-/qKPUQlaW1OyR51WeCPBvRnAlnZFUJkCSG5HzGnuIqhgyJtF+T94lFnn33eiazjRm2LAHVy2guNnaq48X9SJuw==
@@ -5440,13 +5440,14 @@ gatsby-react-router-scroll@^2.0.2:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
-gatsby-remark-rehype-images@0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-rehype-images/-/gatsby-remark-rehype-images-0.0.1.tgz#aca7c72336b36bc52970db951e3182cd628c5a59"
-  integrity sha512-7d3FWLn43CRSdx1xyJUbxkW4VM3s0eV/+RolFMoU/717pHjb6rqqpiwDohD+nL8ktrYzTQB47h2Y8sfN62a0xA==
+gatsby-remark-rehype-images@0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-rehype-images/-/gatsby-remark-rehype-images-0.1.0.tgz#845c7b2b23cbaa00773e99d22cd414d19e4e0d41"
+  integrity sha512-NPSA4eryNtULstQWKwgBBCFmm5JcVq4hYeQlV77eKngXYFMzRlPmdyVmHJAYvwLtlaH3V0zd2rk+ZxynNn0i+Q==
   dependencies:
     "@babel/preset-env" "^7.0.0"
     "@babel/runtime" "^7.0.0"
+    bluebird "^3.5.3"
     cheerio "^1.0.0-rc.2"
     gatsby "^2.0.59"
     gatsby-plugin-sharp "^2.0.14"
